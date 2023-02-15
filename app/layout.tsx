@@ -1,5 +1,4 @@
 import Header from './Header';
-import AuthContext from './AuthContext';
 import '../styles/globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -7,12 +6,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html>
       <head>
         <title>Test</title>
+        <script src="https://kit.fontawesome.com/8795cf8950.js" crossOrigin="anonymous"></script>
       </head>
       <body>
-        <AuthContext>
-          <Header />
-          {children}
-        </AuthContext>
+        <Header />
+        {children}
       </body>
     </html>
   );
